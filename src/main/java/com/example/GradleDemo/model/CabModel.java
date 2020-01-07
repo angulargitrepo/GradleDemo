@@ -1,5 +1,10 @@
 package com.example.GradleDemo.model;
 
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
 public class CabModel {
     private int id;
     private String name;

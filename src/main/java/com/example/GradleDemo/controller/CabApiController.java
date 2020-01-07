@@ -7,5 +7,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class CabApiController {
     public void getCanApiController(){
         CabApiDto cabApiDto=new CabApiDto();
+        cabApiDto.getBankId();
     }
 }

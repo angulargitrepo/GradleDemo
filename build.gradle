@@ -27,6 +27,8 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	compile 'com.mit:CabApiModel:1.0'
+	compileOnly "org.projectlombok:lombok:1.18.6"
+	annotationProcessor "org.projectlombok:lombok:1.18.6"
 	testImplementation('org.springframework.boot:spring-boot-starter-test') {
 		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
 	}
@@ -36,10 +38,10 @@ test {
 	useJUnitPlatform()
 }
 
-uploadArchives {
+/*uploadArchives {
 	repositories.mavenDeployer {
 		repository(url: myMavenRepoReadUrl) {
 			authentication(userName: "$mavenUser", password: "mavenPassword")
 		}
 	}
-}
+}*/
